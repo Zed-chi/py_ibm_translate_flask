@@ -1,0 +1,21 @@
+body{
+    background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;   
+
+}
+
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+form textarea{
+    width: 500px;
+    max-width: 500px;
+    
+}
+
+form input{
+    padding: 10px;
+}
