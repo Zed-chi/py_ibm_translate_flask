@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Translate text</h1>
+        <fieldset>
+            <legend>English to French</legend>
+            <form action="/englishToFrench" method="post">
+                <p><label for="en">English text</label></p>
+                <p>
+                    <textarea name="text" id="en" cols="30" rows="10">{% if en_src %}{{en_src}}{% else %}Type something{% endif %}
+                    </textarea>
+                    <textarea>{% if en_translated %}{{en_translated}}{% else %}... translation will be here{% endif %}
+                    </textarea>
+                </p>
+                <p><input type="submit" value="Translate to French"></p>
+            </form>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend>French to English</legend>
+            <form action="/frenchToEnglish" method="post">
+                <p><label for="fr">French text</label></p>
+                <p>
+                    <textarea name="text" id="fr" cols="30" rows="10">{% if fr_src %}{{fr_src}}{% else %}Type something{% endif %}
+                    </textarea>
+                    <textarea >{% if fr_translated %}{{fr_translated}}{% else %}... translation will be here{% endif %}
+                    </textarea>
+                </p>
+                <p><input type="submit" value="Translate english"></p>
+            </form>            
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
