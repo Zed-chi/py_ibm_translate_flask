@@ -2,7 +2,7 @@
 This is simple server for translating text in french/english.
 Based on flask
 
-Hello guys, due to accout activetion problem i mada it with translators package instead. 
+Hello guys, due to accout activation problem i've made it with "translators" package instead. 
 Thank you)
 
 ### Requirements:
