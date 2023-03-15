@@ -13,3 +13,9 @@ Thank you)
 
 ### Starting:
 `python3 server.py`
+
+So API consist two routes:
+* `/englishToFrench`
+* `/frenchToEnglish`
+
+All you have to do is to push POST request with `{"text":...}` data.
